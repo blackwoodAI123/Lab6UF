@@ -1,4 +1,4 @@
-
+#Aiden Blackwood
 def encode(string):
     return_string = ""
     for count in range(len(string)):
