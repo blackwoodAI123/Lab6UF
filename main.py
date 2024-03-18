@@ -8,7 +8,6 @@ def encode(string):
     return return_string
 
 def main():
-    executed = False
     while True:
         print("Menu")
         print("-------------")
@@ -18,17 +17,13 @@ def main():
         user_choice = int(input())
 
         if user_choice == 1:
-            executed = True
             print("Please enter your password to encode:", end=" ")
             password = input()
             encoded_password = encode(password)
             print("Your password has been encoded and stored!")
 
         elif user_choice == 2:
-            if executed == True:
-                print("The encoded password is " + encoded_password + ", and the original password is " + password + ".")
-            else:
-                print("No password assigned.")
+            pass
 
         elif user_choice == 3:
             break
